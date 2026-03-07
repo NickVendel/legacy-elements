@@ -29,7 +29,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
 			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
 		</rules>
 	</element>
 
