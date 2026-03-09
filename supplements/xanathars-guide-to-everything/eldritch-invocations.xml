@@ -4,7 +4,7 @@
 		<name>Eldrich Invocations</name>
 		<description>The Eldrich Invocations from Xanathar’s Guide to Everything</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Xanathar’s Guide to Everything</author>
-		<update version="0.0.9">
+		<update version="0.1.0">
 			<file name="eldritch-invocations.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/xanathars-guide-to-everything/eldritch-invocations.xml" />
 		</update>
 	</info>
@@ -44,7 +44,7 @@
 	<element name="Eldritch Smite" type="Class Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SMITE">
 		<supports>Eldritch Invocation, Pact of the Blade</supports>
 		<prerequisite>5th level, Pact of the Blade feature</prerequisite>
-		<requirements>[level:5],ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE</requirements>
+		<requirements>([level:5],ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE),!ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SMITE</requirements>
 		<description>
 			<p class="flavor">Prerequisite: 5th level, Pact of the Blade feature</p>
 			<p>Once per turn when you hit a creature with your pact weapon, you can expend a warlock spell slot to deal an extra 1d8 force damage to the target, plus another 1d8 per level of the spell slot, and you can knock the target prone if it is Huge or smaller.</p>
@@ -70,7 +70,7 @@
 	<element name="Gift of the Depths" type="Class Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_CLASS_FEATURE_ELDRITCH_INVOCATION_GIFT_OF_THE_DEPTHS">
 		<supports>Eldritch Invocation</supports>
 		<prerequisite>5th level</prerequisite>
-		<requirements>[level:5]</requirements>
+		<requirements>[level:5],!ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_GIFT_OF_THE_DEPTHS</requirements>
 		<description>
 			<p class="flavor">Prerequisite: 5th level</p>
 			<p>You can breathe underwater, and you gain a swimming speed equal to your walking speed.</p>
