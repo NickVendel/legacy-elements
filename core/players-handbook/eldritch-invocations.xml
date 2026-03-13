@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="eldritch-invocations.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/eldritch-invocations.xml" />
 		</update>
 	</info>
@@ -114,7 +114,7 @@
 
 	<element name="Book of Ancient Secrets" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BOOK_OF_ANCIENT_SECRETS">
 		<supports>Eldritch Invocation, Pact of the Tome</supports>
-		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME</requirements>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME||ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_TOME</requirements>
 		<prerequisite>Pact of the Tome feature</prerequisite>
 		<description>
 			<p><em>Prerequisite: Pact of the Tome feature</em></p>
@@ -132,7 +132,7 @@
 
 	<element name="Chains of Carceri" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_CHAINS_OF_CARCERI">
 		<supports>Eldritch Invocation, Pact of the Chain</supports>
-		<requirements>[level:15],ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN</requirements>
+		<requirements>[level:15],(ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN||ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_CHAIN)</requirements>
 		<prerequisite>15th level, Pact of the Chain feature</prerequisite>
 		<description>
 			<p><em>Prerequisite: 15th level, Pact of the Chain feature</em></p>
@@ -250,7 +250,7 @@
 
 	<element name="Lifedrinker" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_LIFEDRINKER">
 		<supports>Eldritch Invocation, Pact of the Blade</supports>
-		<requirements>([level:12],ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE),!ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LIFEDRINKER</requirements>
+		<requirements>([level:12],(ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE||ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_BLADE)),!ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LIFEDRINKER</requirements>
 		<prerequisite>12th level, Pact of the Blade feature</prerequisite>
 		<description>
 			<p><em>Prerequisite: 12th level, Pact of the Blade feature</em></p>
@@ -460,7 +460,7 @@
 
 	<element name="Thirsting Blade" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_THIRSTING_BLADE">
 		<supports>Eldritch Invocation, Pact of the Blade</supports>
-		<requirements>([level:5],ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE),!ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_THIRSTING_BLADE</requirements>
+		<requirements>([level:5],(ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE||ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_BLADE)),!ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_THIRSTING_BLADE</requirements>
 		<prerequisite>5th level, Pact of the Blade feature</prerequisite>
 		<description>
 			<p><em>Prerequisite: 5th level, Pact of the Blade feature</em></p>
@@ -492,7 +492,7 @@
 
 	<element name="Voice of the Chain Master" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_VOICE_OF_THE_CHAIN_MASTER">
 		<supports>Eldritch Invocation, Pact of the Chain</supports>
-		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN</requirements>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN||ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_CHAIN</requirements>
 		<prerequisite>Pact of the Chain feature</prerequisite>
 		<description>
 			<p><em>Prerequisite: Pact of the Chain feature</em></p>
