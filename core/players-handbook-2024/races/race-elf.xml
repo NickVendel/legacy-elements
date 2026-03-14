@@ -117,7 +117,7 @@
 			<description level="5">You know a cantrip from the Wizard spell list. You can replace this cantrip whenever you finish a long rest. You can cast the Detect Magic and Misty Step spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
 		</sheet>
 		<rules>
-			<select type="Spell" name="Wizard Cantrip (High Elf)" supports="Wizard&amp;&amp;0" default="ID_WOTC_PHB24_SPELL_PRESTIDIGITATION" />
+			<select type="Spell" name="Wizard Cantrip (High Elf)" supports="Wizard,0" default="ID_WOTC_PHB24_SPELL_PRESTIDIGITATION" />
 			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC" level="3" />
 			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" level="5" />
 		</rules>

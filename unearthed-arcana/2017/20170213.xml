@@ -4,7 +4,7 @@
 		<name>Unearthed Arcana: Warlock and Wizard</name>
 		<description>The warlock and the wizard reach new arcane horizons this week. The warlock receives two playtest options for the Otherworldly Patron feature: the Hexblade and the Raven Queen. That class also gets a collection of playtest options for its Eldritch Invocations feature. Meanwhile, the wizard receives a playtest option for the Arcane Tradition feature: Lore Mastery.</description>
 		<author url="http://dnd.wizards.com/articles/unearthed-arcana/warlock-and-wizard">Wizards of the Coast</author>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="20170213.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/unearthed-arcana/2017/20170213.xml" />
 		</update>
 	</info>
@@ -88,6 +88,16 @@
 			<extend>ID_PHB_SPELL_LOCATE_CREATURE</extend>
 			<extend>ID_PHB_SPELL_COMMUNE</extend>
 			<extend>ID_PHB_SPELL_CONE_OF_COLD</extend>
+			<extend>ID_WOTC_PHB24_SPELL_FALSE_LIFE</extend>
+			<extend>ID_WOTC_PHB24_SPELL_SANCTUARY</extend>
+			<extend>ID_WOTC_PHB24_SPELL_SILENCE</extend>
+			<extend>ID_WOTC_PHB24_SPELL_SPIRITUAL_WEAPON</extend>
+			<extend>ID_WOTC_PHB24_SPELL_FEIGN_DEATH</extend>
+			<extend>ID_WOTC_PHB24_SPELL_SPEAK_WITH_DEAD</extend>
+			<extend>ID_WOTC_PHB24_SPELL_ICE_STORM</extend>
+			<extend>ID_WOTC_PHB24_SPELL_LOCATE_CREATURE</extend>
+			<extend>ID_WOTC_PHB24_SPELL_COMMUNE</extend>
+			<extend>ID_WOTC_PHB24_SPELL_CONE_OF_COLD</extend>
 		</spellcasting>
 	</element>
 	<element name="Sentinel Raven" type="Archetype Feature" source="Unearthed Arcana: Warlock and Wizard" id="ID_WOTC_UA_ARCHETYPE_FEATURE_RAVEN_QUEEN_SENTINEL_RAVEN">
