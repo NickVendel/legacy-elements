@@ -9,7 +9,6 @@
 	</info>
 
 	<element name="Origin Feat" type="Background Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_BACKGROUND_FEATURE_ORIGIN_FEAT">
-		<requirements>ID_BACKGROUND_ACOLYTE</requirements>
 		<supports>Optional Background Feature</supports>
 		<description>
 			<p>This feature allows you to replace your Background Feature with an Origin Feat of your choice.</p>
