@@ -3,7 +3,7 @@
 	<info>
 		<name>Aurora Legacy Essentials</name>
 		<description>Elements that have functionality similar to Internals, but can appear in the Compendium.</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="ALE.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/ALE.xml" />
 		</update>
 	</info>
@@ -1887,7 +1887,7 @@
 	<element name="Tool Expertise (Thieves’ Tools)" type="Class Feature" source="Aurora Legacy Essentials" id="ID_INTERNAL_CLASS_FEATURE_TOOL_EXPERTISE_THIEVES_TOOLS">
 		<requirements>!ID_EXPERTISE_TOOL_THIEVES_TOOLS</requirements>
 		<sheet>
-        	<description>Your proficiency bonus is doubled for any Thieves’ Tools check you make.</description>
+			<description>Your proficiency bonus is doubled for any Thieves’ Tools check you make.</description>
 		</sheet>
 	</element>
 
@@ -2712,7 +2712,7 @@
 				<li>When you forage, you find twice as much food as you normally would.</li>
 				<li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
 			</ul>
-		</description>		
+		</description>
 	</element>
 
 	<element name="Coast" type="Class Feature" source="Aurora Legacy Essentials" id="ID_WOTC_CLASSFEATURE_RANGER_NATURAL_EXPLORER_FT_COAST">
@@ -2728,7 +2728,7 @@
 				<li>When you forage, you find twice as much food as you normally would.</li>
 				<li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
 			</ul>
-		</description>		
+		</description>
 	</element>
 
 	<element name="Desert" type="Class Feature" source="Aurora Legacy Essentials" id="ID_WOTC_CLASSFEATURE_RANGER_NATURAL_EXPLORER_FT_DESERT">
@@ -2744,7 +2744,7 @@
 				<li>When you forage, you find twice as much food as you normally would.</li>
 				<li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
 			</ul>
-		</description>		
+		</description>
 	</element>
 
 	<element name="Forest" type="Class Feature" source="Aurora Legacy Essentials" id="ID_WOTC_CLASSFEATURE_RANGER_NATURAL_EXPLORER_FT_FOREST">
@@ -2760,7 +2760,7 @@
 				<li>When you forage, you find twice as much food as you normally would.</li>
 				<li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
 			</ul>
-		</description>		
+		</description>
 	</element>
 
 	<element name="Grassland" type="Class Feature" source="Aurora Legacy Essentials" id="ID_WOTC_CLASSFEATURE_RANGER_NATURAL_EXPLORER_FT_GRASSLAND">
@@ -2776,7 +2776,7 @@
 				<li>When you forage, you find twice as much food as you normally would.</li>
 				<li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
 			</ul>
-		</description>		
+		</description>
 	</element>
 
 	<element name="Mountain" type="Class Feature" source="Aurora Legacy Essentials" id="ID_WOTC_CLASSFEATURE_RANGER_NATURAL_EXPLORER_FT_MOUNTAIN">
@@ -2792,7 +2792,7 @@
 				<li>When you forage, you find twice as much food as you normally would.</li>
 				<li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
 			</ul>
-		</description>		
+		</description>
 	</element>
 
 	<element name="Swamp" type="Class Feature" source="Aurora Legacy Essentials" id="ID_WOTC_CLASSFEATURE_RANGER_NATURAL_EXPLORER_FT_SWAMP">
@@ -2808,7 +2808,7 @@
 				<li>When you forage, you find twice as much food as you normally would.</li>
 				<li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
 			</ul>
-		</description>		
+		</description>
 	</element>
 
 	<element name="Underdark" type="Class Feature" source="Aurora Legacy Essentials" id="ID_WOTC_CLASSFEATURE_RANGER_NATURAL_EXPLORER_FT_UNDERDARK">
@@ -2824,7 +2824,41 @@
 				<li>When you forage, you find twice as much food as you normally would.</li>
 				<li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
 			</ul>
-		</description>		
+		</description>
+	</element>
+
+	<element name="Companion Selection" type="Item" source="Aurora Legacy Essentials" id="ID_INTERNAL_ITEM_PROXY_COMPANION_SELECTION">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You can choose a Companion from a list of all creatures.</p>
+			<p><u><b>Note.</b></u> You can only have one Companion or Familiar per Character. This is a limitation of the app.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="inventory-hidden">true</set>
+			<set name="slot">companion</set>
+		</setters>
+		<rules>
+			<select type="Companion" name="Companion" requirements="!ID_INTERNAL_ITEM_PROXY_FAMILIAR_SELECTION" />
+		</rules>
+	</element>
+
+	<element name="Familiar Selection" type="Item" source="Aurora Legacy Essentials" id="ID_INTERNAL_ITEM_PROXY_FAMILIAR_SELECTION">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You can choose a Familiar from a list of suitable creatures.</p>
+			<p><u><b>Note.</b></u> You can only have one Companion or Familiar per Character. This is a limitation of the app.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="inventory-hidden">true</set>
+			<set name="slot">companion</set>
+		</setters>
+		<rules>
+			<select type="Companion" name="Familiar" supports="Familiar" requirements="!ID_INTERNAL_ITEM_PROXY_COMPANION_SELECTION" />
+		</rules>
 	</element>
 
 </elements>

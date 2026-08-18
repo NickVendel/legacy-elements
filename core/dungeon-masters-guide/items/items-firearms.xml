@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Firearms</name>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="items-firearms.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-firearms.xml" />
 		</update>
 	</info>
@@ -355,10 +355,10 @@
 		<sheet alt="Shotgun" />
 	</element>
 
-	<element name="Weapon Proficiency (Laster Pistol)" type="Proficiency" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FUTURISTIC_FIREARMS_LASTER_PISTOL">
+	<element name="Weapon Proficiency (Laser Pistol)" type="Proficiency" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FUTURISTIC_FIREARMS_LASER_PISTOL">
 		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_50_SHOTS</supports>
 		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
-		<sheet alt="Laster Pistol" />
+		<sheet alt="Laser Pistol" />
 	</element>
 	<element name="Weapon Proficiency (Antimatter Rifle)" type="Proficiency" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FUTURISTIC_FIREARMS_ANTIMATTER_RIFLE">
 		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_2_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
