@@ -3,8 +3,8 @@
 	<info>
 		<name>Creatures</name>
 		<description>Creature statblocks from the Monster Manual (2025).</description>
-		<update version="0.0.1">
-			<file name="creatures.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide-2024/creatures.xml" />
+		<update version="0.0.2">
+			<file name="creatures.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/monster-manual-2025/creatures.xml" />
 		</update>
 	</info>
 
